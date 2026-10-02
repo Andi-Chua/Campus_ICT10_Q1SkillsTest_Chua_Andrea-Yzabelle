@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OBMC Entrep Fair - Receipt Generator</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.2.2/core.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>OBMC Entrep Fair</h1>
+        <h2>Group 1 - Milktea Shop </h2>
+
+        <div class="menu-box">
+
+            <h3>Menu</h3>
+
+            <label>
+                <input type="checkbox" class="item" value="120">
+                Wintermelon - ₱120
+            </label>
+
+            <label>
+                <input type="checkbox" class="item" value="150">
+                Thai Milk tea  - ₱150
+            </label>
+
+            <label>
+                <input type="checkbox" class="item" value="135">
+                Okinawa - ₱135
+            </label>
+
+            <label>
+                <input type="checkbox" class="item" value="140">
+                Oolong - ₱140
+            </label>
+
+            <label>
+                <input type="checkbox" class="item" value="145">
+                Taro - ₱145
+            </label>
+
+            <button id="calculate">Create Order </button>
+
+        </div>
+
+        <div class="receipt">
+
+            <h3>──── Receipt ────</h3>
+
+            <p>Subtotal: <span id="subtotal">₱0.00</span></p>
+
+            <p>VAT (12%): <span id="vat">₱0.00</span></p>
+
+            <p class="total">
+                Total: <span id="total">₱0.00</span>
+            </p>
+
+        </div>
+
+    </div>
+
+  
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>

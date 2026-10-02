@@ -1,3 +1,4 @@
+from pyscript import document, when
 
 @when("click", "#calculate")
 def calculate_receipt(event):
